@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Note For You</title>
+	
+	<style type="text/css">
+	body{
+		background-color: grey;
+	}
+		#title{
+			text-align: center;
+		}
+		#in{
+			background-color: black;
+			color: white;
+			text-align: center;
+			height: 30vh;
+			padding-top: 5%;
+			margin-left: 7%;
+			margin-right: 7%
+
+		}
+		#noteIn{
+			width: 80%;
+			align-content:  center;
+			height: 5vh;
+			margin-bottom: 3%
+
+
+		}
+		#note{
+			background-color: white;
+			color: black;
+			height: 30vh;
+			padding-top: 7%;
+			margin-left: 7%;
+			margin-right: 7%
+		}
+	</style>
+</head>
+<body>
+	<div id="title">
+	<h1>Hey There!I'm here to take your Notes</h1>
+	</div>
+	<div id="in">
+		<form method="post" action="/Notes">
+		<H3>Add Your Notes Here</H3>
+		<input type="text" name="note" id="noteIn"><br>
+		<input type="Submit" name="add note" value="Submit">
+		</form>
+	</div>
+	<div id="note">
+		<ul class="Notes">
+		  <script type="text/javascript"> for(var i=0; i<quotes.length; i++) </script>
+
+		    <li class="Note">
+		      <span><script type="text/javascript"> Notes[i].noteIn </script></span>
+		    
+		    </li>
+		</ul>  
+	</div>
+
+</body>
+</html>

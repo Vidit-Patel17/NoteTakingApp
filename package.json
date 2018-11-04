@@ -1,0 +1,17 @@
+{
+  "name": "p1",
+  "version": "1.0.0",
+  "description": "Note taking app",
+  "main": "node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vidit",
+  "license": "MIT",
+  "dependencies": {
+    "body": "^5.1.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.9",
+    "parser": "^0.1.4"
+  }
+}
