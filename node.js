@@ -1,4 +1,6 @@
 var mongodb =require('mongodb');
+var MongoClient= mongodb.MongoClient;
+var url = 'mongodb://127.0.0.1:27017/mydb';
 var mongoose = require('mongoose');
 var express = require('express');
 var bodyParser =require('body-parser');
@@ -26,8 +28,21 @@ app.get("/",(req,res) => {
 });
 
 
+
+
+MongoClient.connect(url, function(err, db) {
+  // if (err) throw err;
+  var dbo = db1.db("mydb");
+  dbo.createCollection("Notes", function(err, res) {
+    // if (err) throw err;
+    console.log("Collection created!");
+    db1.close();
+  });
+}); 
+
+
 app.post("/Notes",(req,res) => {
-  db.collection('Notes').find().toArray((err, result) => {
+  dbo.collection('Notes').find().toArray((err, result) => {
     if (err) return console.log(err)
     
     res.render('note.html', {notes: result})
