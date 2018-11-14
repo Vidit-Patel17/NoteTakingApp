@@ -15,5 +15,16 @@
 		<input type="Submit" name="addNote" value="Submit">
 		</form>
 	</div> 
+
+	<ul class="Notes">
+		  <% for(var i=0; i<Notes.length; i++) {%>
+		    <li class="note">
+		      <span><%= Notes[i].note %></span>
+		    </li>
+		  <% } %>
+ 	</ul>
+
+
+
 </body>
 </html>
