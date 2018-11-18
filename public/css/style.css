@@ -8,7 +8,7 @@ body{
 	background-color: black;
 	color: white;
 	text-align: center ;
-	height: 40vh;
+	height: 30vh;
 	padding-top: 7%;
 	margin-left: 7%;
 	margin-right: 7%
@@ -22,7 +22,7 @@ body{
 #output{
 	background-color: white;
 	color: black;
-	height: 20vh;
+	height: 30vh;
 	padding-top: 7%;
 	margin-left: 7%;
 	margin-right: 7%
